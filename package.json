@@ -12,5 +12,11 @@
   },
   "dependencies": {
     "astro": "^1.6.0"
+  },
+  "devDependencies": {
+    "stylelint": "^14.14.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^29.0.0",
+    "the-new-css-reset": "^1.7.3"
   }
 }
