@@ -1,0 +1,11 @@
+/* Global styles */
+:root {
+  --color-brand--red-lch: lch(49% 51 349);
+  --color-brand--red-rgb: rgb(73.19% 29.64% 52.87%);
+}
+
+.card {
+  border: solid 1px darkgray;
+  padding: 10px;
+  border-radius: 8px;
+}

@@ -1,0 +1,15 @@
+---
+const {sectionTitle, content} = Astro.props;
+const { class: card } = Astro.props;
+---
+<!-- Component styles -->
+<style>
+	h2 {
+		border-bottom: solid 3px var(--color-brand--red-lch, var(--color-brand--red-rgb));
+	}
+</style>
+
+<section class="card">
+	<h2>{sectionTitle}</h2>
+	<slot />	
+</section>
