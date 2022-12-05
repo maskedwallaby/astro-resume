@@ -1,11 +1,17 @@
 ---
 import "the-new-css-reset/css/reset.css"
+/* import "simpledotcss/simple.min.css" (too opinionated) */
 import '../styles/global.css';
 ---
 
 <style>
+  body {
+    margin: 1rem;
+  }
   main {
-    background-image: url('../../public/textured_paper.png');  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
   }
 </style>
 

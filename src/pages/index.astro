@@ -1,11 +1,19 @@
 ---
+import site_title from '../config';
 import Layout from '../layouts/layout.astro';
 import Card from '../components/card.astro';
+import Tag from '../components/tag.astro';
 ---
 
+<!-- TODO: set up site props -->
+<h1>{site_title}</h1>
 <Layout>
-	<h1>Here's my content.</h1>
 	<Card sectionTitle="Experience">
+		<h3>Twin State</h3>
+		<h4>Web Designer</h4>
+		<div>2011&ndash;present</div>
+	</Card>
+	<Card sectionTitle="Info">
 		<p>Set prop for 2-column, 3-column, other settings.</p>
 		<ul>
 			<li>content</li>
@@ -13,10 +21,10 @@ import Card from '../components/card.astro';
 			<li>content</li>
 		</ul>	
 	</Card>
-	<Card sectionTitle="Experience">
+	<Card sectionTitle="Samples">
 		<p>Set prop for 2-column, 3-column, other settings.</p>
 		<ul>
-			<li>content</li>
+			<li>United Way <Tag tagtype="design"></Tag> <Tag tagtype="dev"></Tag></li>
 			<li>content</li>
 			<li>content</li>
 		</ul>	

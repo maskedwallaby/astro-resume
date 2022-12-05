@@ -1,0 +1,38 @@
+---
+/* export interface Tag {
+  value: string;
+  type?: string;
+  url?: string;
+}
+export interface Props {
+  tag: Tag;
+}
+const { Tag } = Astro.props; */
+// ...
+// const {type, content, class: tag} = Astro.props;
+const {tagtype} = Astro.props;
+---
+
+<!-- <span class="tag {type}">-->
+<span class="tag">{tagtype}</span>
+
+<style>
+	.tag {
+		display: inline-block;
+		border-radius: 4px;
+		padding: 2px 4px;
+		margin-right: 2px;
+		font-size: 0.75rem;
+		background-color: #eee;
+		border: solid 1px #ddd;
+		color: gray;
+		text-transform: capitalize;
+		
+	}
+	.design {
+		background-color: var(--color-navy);
+	}
+	.dev {
+		background-color: var(--color-red);
+	}
+</style>

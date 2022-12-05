@@ -1,11 +1,99 @@
 /* Global styles */
-:root {
-  --color-brand--red-lch: lch(49% 51 349);
-  --color-brand--red-rgb: rgb(73.19% 29.64% 52.87%);
+
+@font-face {
+  font-family: Museo;
+  font-weight: normal;
+  src: url("museo500.woff2") format("woff2");
+}
+@font-face {
+  font-family: Museo;
+  font-weight: bold;
+  src: url("museo700.woff2") format("woff2");
+}
+@font-face {
+  font-family: MuseoSans;
+  font-weight: normal;
+  src: url("museosans-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: MuseoSans;
+  font-weight: normal;
+  font-style: oblique;
+  src: url("museosansitalic-500.woff2") format("woff2");
 }
 
-.card {
-  border: solid 1px darkgray;
-  padding: 10px;
-  border-radius: 8px;
+:root {
+  /* ------------- Colors ------------- */
+  --color-brand-raspberry-lch: lch(46.096% 56.044 17.8deg);
+  --color-brand-raspberry-rgb: rgb(73.19% 29.64% 52.87%);
+  --color-brand-navy-lch: lch(25.363% 25.271 261.816deg);
+  --color-brand-navy-rgb: rgb(0% 25.26% 27.74%);
+  --color-brand-yellow-lch: lch(89.042% 33.118 88.975deg);
+  --color-brand-yellow-rgb: rgb(94.9% 87.06% 62.75%);
+  --color-brand-navy-black: lch(25.363% 0 261.816deg);
+  --color-brand-navy-black-rgb: rgb(23.57% 23.57% 23.57%);
+
+  /* ------------- Shadows ------------- */
+  --shadow-color: 0deg 0% 54%;
+  --shadow-elevation-low: -0.4px 0.8px 1px hsl(var(--shadow-color) / 0.32),
+    -0.6px 1.3px 1.6px -1.2px hsl(var(--shadow-color) / 0.32),
+    -1.4px 3.1px 3.8px -2.5px hsl(var(--shadow-color) / 0.32);
+  --shadow-elevation-medium: -0.4px 0.8px 1px hsl(var(--shadow-color) / 0.33),
+    -1.2px 2.6px 3.2px -0.8px hsl(var(--shadow-color) / 0.33),
+    -2.9px 6.4px 7.9px -1.7px hsl(var(--shadow-color) / 0.33),
+    -7px 15.5px 19.1px -2.5px hsl(var(--shadow-color) / 0.33);
+  --shadow-elevation-high: -0.4px 0.8px 1px hsl(var(--shadow-color) / 0.35),
+    -2.2px 5px 6.1px -0.4px hsl(var(--shadow-color) / 0.35),
+    -4.4px 9.6px 11.9px -0.8px hsl(var(--shadow-color) / 0.35),
+    -7.6px 16.8px 20.7px -1.2px hsl(var(--shadow-color) / 0.35),
+    -13px 28.6px 35.3px -1.7px hsl(var(--shadow-color) / 0.35),
+    -21.3px 47px 58.1px -2.1px hsl(var(--shadow-color) / 0.35),
+    -33.5px 74.1px 91.5px -2.5px hsl(var(--shadow-color) / 0.35);
+
+  --font-body: MuseoSans, sans-serif;
+  --font-heading: Museo, serif;
+}
+
+body {
+  background-image: url("../../ricepaper2.png");
+  font-family: var(--font-body);
+}
+
+main {
+  font-size: clamp(16px, calc(-1rem + 4vw), 21px);
+  line-height: 1.4;
+  color: var(--color-brand-navy-black-rgb);
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: clamp(20px, calc(4vw + 1rem), 30px);
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+h3 {
+  font-size: clamp(18px, calc(4vw + 0.5rem), 20px);
+}
+
+h3,
+h4 {
+  font-weight: bold;
+}
+
+ul,
+ol {
+  margin-left: 1.125rem;
+  list-style-type: square;
+  margin-top: 0.25rem;
+}
+li {
+  padding-left: 0;
+  text-indent: -0.25rem;
 }
