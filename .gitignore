@@ -21,3 +21,6 @@ pnpm-debug.log*
 # Text edtior environments
 .vscode/
 .nova/
+
+# Other stuff
+.stylelintrc.json
