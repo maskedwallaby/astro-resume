@@ -10,17 +10,17 @@ export interface Props {
 const { Tag } = Astro.props; */
 // ...
 // const {type, content, class: tag} = Astro.props;
-const {tagtype} = Astro.props;
+const {tagtype, class: tag} = Astro.props;
 ---
 
-<!-- <span class="tag {type}">-->
-<span class="tag">{tagtype}</span>
+<tag class={tagtype}>{tagtype}</tag>
 
 <style>
-	.tag {
-		display: inline-block;
+	tag {
+		/* display: inline-block; */
 		border-radius: 4px;
-		padding: 2px 4px;
+		padding: 1px 4px;
+		line-height: 1.125;
 		margin-right: 2px;
 		font-size: 0.75rem;
 		background-color: #eee;
@@ -30,9 +30,13 @@ const {tagtype} = Astro.props;
 		
 	}
 	.design {
-		background-color: var(--color-navy);
+		color: var(--color-brand-navy-lch);
+		border-color: var(--color-brand-navy-lch);
+		background-color: var(--color-brand-navy--light-lch);
 	}
 	.dev {
-		background-color: var(--color-red);
+		color: var(--color-brand-raspberry-lch);
+		border-color: var(--color-brand-raspberry-lch);
+		background-color: var(--color-brand-raspberry--light-lch);
 	}
 </style>

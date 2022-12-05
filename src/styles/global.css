@@ -25,12 +25,14 @@
 :root {
   /* ------------- Colors ------------- */
   --color-brand-raspberry-lch: lch(46.096% 56.044 17.8deg);
+  --color-brand-raspberry--light-lch: lch(96.096% 16.044 17.8deg);
   --color-brand-raspberry-rgb: rgb(73.19% 29.64% 52.87%);
   --color-brand-navy-lch: lch(25.363% 25.271 261.816deg);
+  --color-brand-navy--light-lch: lch(90.363% 10.271 261.816deg);
   --color-brand-navy-rgb: rgb(0% 25.26% 27.74%);
   --color-brand-yellow-lch: lch(89.042% 33.118 88.975deg);
   --color-brand-yellow-rgb: rgb(94.9% 87.06% 62.75%);
-  --color-brand-navy-black: lch(25.363% 0 261.816deg);
+  --color-brand-navy-black: lch(20.363% 0 261.816deg);
   --color-brand-navy-black-rgb: rgb(23.57% 23.57% 23.57%);
 
   /* ------------- Shadows ------------- */
