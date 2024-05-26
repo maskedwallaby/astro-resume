@@ -1,26 +1,64 @@
 /* Global styles */
 
 @font-face {
+  font-family: "League Spartan Variable";
+  font-weight: 400 600;
+  src: url("../../typefaces/LeagueSpartan-VF.woff2") format("woff2-variations");
+}
+
+@font-face {
+  font-family: "fanwood";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../typefaces/fanwood_text-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: "fanwood";
+  font-weight: normal;
+  font-style: italic;
+  src: url("../../typefaces/fanwood_text_italic-webfont.woff") format("woff");
+}
+
+/* 
+@font-face {
   font-family: Museo;
   font-weight: normal;
-  src: url("museo500.woff2") format("woff2");
+  src: url("../../museo500.woff2") format("woff2");
 }
 @font-face {
   font-family: Museo;
   font-weight: bold;
-  src: url("museo700.woff2") format("woff2");
+  src: url("../../museo700.woff2") format("woff2");
 }
 @font-face {
   font-family: MuseoSans;
   font-weight: normal;
-  src: url("museosans-500.woff2") format("woff2");
+  src: url("../../museosans-500.woff2") format("woff2");
 }
 @font-face {
   font-family: MuseoSans;
   font-weight: normal;
   font-style: oblique;
-  src: url("museosansitalic-500.woff2") format("woff2");
+  src: url("../../museosansitalic-500.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: Konnect;
+  font-weight: normal;
+  src: url("../../konnect-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: Konnect;
+  font-weight: bold;
+  src: url("../../konnect-bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: Konnect;
+  font-weight: normal;
+  font-style: oblique;
+  src: url("../../konnect-italic.woff2") format("woff2");
+} */
 
 :root {
   /* ------------- Colors ------------- */
@@ -52,8 +90,12 @@
     -21.3px 47px 58.1px -2.1px hsl(var(--shadow-color) / 0.35),
     -33.5px 74.1px 91.5px -2.5px hsl(var(--shadow-color) / 0.35);
 
-  --font-body: MuseoSans, sans-serif;
-  --font-heading: Museo, serif;
+  /* --font-body: MuseoSans, sans-serif;
+  --font-heading: Museo, serif; */
+  /* --font-body: Konnect, sans-serif;
+  --font-heading: var(--font-body), serif; */
+  --font-body: "fanwood", Georgia, serif;
+  --font-heading: "League Spartan Variable", sans-serif;
 }
 
 body {
@@ -66,12 +108,25 @@ main {
   line-height: 1.4;
   color: var(--color-brand-navy-black-rgb);
 }
+@media (prefers-color-scheme: dark) {
+  body {
+    background-image: linear-gradient(
+      var(--color-brand-navy-lch),
+      var(--color-brand-navy-black)
+    );
+  }
+  main {
+    color: white;
+  }
+}
 h1,
 h2,
-h3,
-h4 {
+h3 {
   font-family: var(--font-heading);
-  font-weight: bold;
+  font-variation-settings: "wght" 600;
+}
+h4 {
+  letter-spacing: -1px;
 }
 
 h2 {
@@ -98,4 +153,8 @@ ol {
 li {
   padding-left: 0;
   text-indent: -0.25rem;
+}
+
+details p {
+  margin-left: 1rem;
 }

@@ -10,8 +10,12 @@ import Tag from '../components/tag.astro';
 <Layout>
 	<Card sectionTitle="Experience">
 		<h3>Twin State</h3>
-		<h4>Web Designer</h4>
+		<h4>Web Designer, Web Developer, Art Director</h4>
 		<div>2011&ndash;present</div>
+		<details>
+			<summary>Job Details</summary>
+			<p>I am a UI/UX designer working as a part of the Web Team at Twin State Technical Services. I started my time at Twin State crafting logos and illustrations, and have moved with the business into designing interfaces for websites and apps. Working at Twin State has exposed me to a great number of coding languages and frameworks, from WordPress to React. I've had a chance to attend multiple conferences while working at Twin State, including multiple An Event Apart's and WordCamps. My continued exposure to web technologies has continued to provide me with a source of excitement and passion in making websites faster, better, and more interesting—and in creating an emotional connection with the audience.</p>
+		</details>
 	</Card>
 	<Card sectionTitle="Info">
 		<p>Set prop for 2-column, 3-column, other settings.</p>
@@ -21,12 +25,13 @@ import Tag from '../components/tag.astro';
 			<li>content</li>
 		</ul>	
 	</Card>
-	<Card sectionTitle="Samples">
+	<Card sectionTitle="Samples of work">
 		<p>Set prop for 2-column, 3-column, other settings.</p>
-		<ul>
-			<li>United Way <Tag tagtype="design"></Tag> <Tag tagtype="dev"></Tag></li>
-			<li>content</li>
-			<li>content</li>
-		</ul>	
+		<section>
+		<h3>United Way</h3>
+		<Tag tagtype="design"></Tag> <Tag tagtype="dev"></Tag>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus voluptas maxime commodi eligendi nesciunt. Hic obcaecati, nam, fugit necessitatibus iusto natus aut molestias, laborum similique quam at consequuntur asperiores?</p>
+		</section>
+		
 	</Card>
 </Layout>

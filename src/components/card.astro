@@ -17,13 +17,18 @@ const { class: card } = Astro.props;
 	  transition-property: transform, box-shadow;
 	  transition-timing-function: ease;
 	  transition-duration: 0.25s;
-	  font-size: 0.825rem;
 	}
 	.card:hover {
 	  transform: scale(1.025);
 	  box-shadow: var(--shadow-elevation-high);
-	  cursor: crosshair;
   	}
+		@media (prefers-color-scheme: dark) {
+			.card {
+				background-color: var(--color-brand-navy-lch);
+				box-shadow: none;
+				border: solid 1px oklch(70% 0.1 175);
+			}
+		}
 </style>
 
 <section class="card">
