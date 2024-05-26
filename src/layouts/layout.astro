@@ -2,6 +2,7 @@
 import "the-new-css-reset/css/reset.css"
 /* import "simpledotcss/simple.min.css" (too opinionated) */
 import '../styles/global.css';
+import { site_title } from '../config';
 ---
 
 <style>
@@ -11,14 +12,31 @@ import '../styles/global.css';
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    display: grid;
+    grid-template-areas: "header header"
+                        "main aside"
+                        "footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
   }
   header {
     margin-bottom: 1rem;
+    grid-area: header;
   }
   main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 1rem;
+    grid-area: main;
+  }
+  aside {
+    grid-area: aside;
+    position: sticky;
+    bottom: 0;
+    /* right: 0; */
+    picture {
+      align-self: bottom;
+    }
   }
   section {
     padding-top: 1rem;
@@ -31,10 +49,20 @@ import '../styles/global.css';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content="{Astro.generator}" />
-    <title>Chris Weiser's resume</title>
+    <title>Chris Weiser's Online Resume</title>
   </head>
   <body>
-    <header><h1>Chris Weiser's Resume</h1></header>
+    <header><h1>{site_title}</h1></header>
     <main><slot /><!-- Content slots in here here --></main>
+    <aside>
+      <picture width="300">
+        <source 
+          srcset="/images/chris-weiser-full-cutout-300.svg" 
+          media="(orientation: portrait)" 
+          
+        />
+        <img src="/images/chris-weiser-full-cutout-300.svg" alt="vanity shot" />
+      </picture>
+    </aside>
   </body>
 </html>
