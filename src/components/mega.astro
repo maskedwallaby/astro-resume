@@ -1,0 +1,38 @@
+---
+// Mega
+---
+<style>
+	.multicolored {
+		background: linear-gradient(
+			to right, 
+			hsl(98 100% 62%), 
+			hsl(204 100% 59%)
+		);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		padding-block-start: 1rem; /* Why is this needed? */
+	}
+	.mega, .champion {
+		text-transform: uppercase;
+	}
+	
+	.mega {
+		font-size: 8rem;
+		line-height: 6rem;
+		letter-spacing: -5%;
+		font-variation-settings: "wght" 900;
+	}
+	.champion {
+		font-size: 4rem;
+		line-height: 2.5rem;
+		letter-spacing: -3%;
+		text-indent: 1rem;
+		font-variation-settings: "wght" 700;
+	}
+</style>
+
+<h1 class="multicolored">
+	<div class="mega">Chris</div>
+	<div class="mega">Weiser</div>
+	<div class="champion">Dot Com</div>
+</h1>

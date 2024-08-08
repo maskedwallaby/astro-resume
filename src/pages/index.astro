@@ -2,14 +2,27 @@
 import Layout from '../layouts/layout.astro';
 import Card from '../components/card.astro';
 import Tag from '../components/tag.astro';
+import Waves from '../components/waves.astro';
+import Mega from '../components/mega.astro';
 ---
+
+<style>
+.house-of-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 1rem;
+	grid-area: main;
+}
+</style>
 
 <!-- TODO: set up site props -->
 
 <Layout>
+	<div class="house-of-cards">
+	<header><Mega /></header>
 	<Card sectionTitle="Experience">
-		<h3>Twin State</h3>
-		<h4>Web Designer, Web Developer, Art Director</h4>
+		<h3>Twin State Technical Services</h3>
+		<h4>Designer | Developer | Art Director</h4>
 		<div>2011&ndash;present</div>
 		<details>
 			<summary>Job Details</summary>
@@ -28,9 +41,9 @@ import Tag from '../components/tag.astro';
 		<p>Set prop for 2-column, 3-column, other settings.</p>
 		<section>
 		<h3>United Way</h3>
-		<Tag tagtype="design"></Tag> <Tag tagtype="dev"></Tag>
+		<Tag tagType="design" /> <Tag tagType="dev" />
 		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus minus voluptas maxime commodi eligendi nesciunt. Hic obcaecati, nam, fugit necessitatibus iusto natus aut molestias, laborum similique quam at consequuntur asperiores?</p>
 		</section>
-		
 	</Card>
+	</div>
 </Layout>

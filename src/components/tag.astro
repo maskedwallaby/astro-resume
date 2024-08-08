@@ -1,21 +1,11 @@
 ---
-/* export interface Tag {
-  value: string;
-  type?: string;
-  url?: string;
-}
-export interface Props {
-  tag: Tag;
-}
-const { Tag } = Astro.props; */
-// ...
-// const {type, content, class: tag} = Astro.props;
-const {tagtype, class: tag} = Astro.props;
+const {tagType, class: tag} = Astro.props;
 ---
 
-<tag class={tagtype}>{tagtype}</tag>
+<tag class={tagType}>{tagType}</tag>
 
 <style>
+	.tag,
 	tag {
 		/* display: inline-block; */
 		border-radius: 4px;
@@ -27,7 +17,6 @@ const {tagtype, class: tag} = Astro.props;
 		border: solid 1px #ddd;
 		color: gray;
 		text-transform: capitalize;
-		
 	}
 	.design {
 		color: var(--color-brand-navy-lch);
@@ -39,4 +28,5 @@ const {tagtype, class: tag} = Astro.props;
 		border-color: var(--color-brand-raspberry-lch);
 		background-color: var(--color-brand-raspberry--light-lch);
 	}
+	
 </style>
