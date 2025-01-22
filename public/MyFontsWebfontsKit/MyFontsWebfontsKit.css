@@ -1,0 +1,147 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4397838, 2022-02-28T14:02:08-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Konnect-Bold by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/bold/
+ * 
+ * Webfont: Konnect-Italic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/italic/
+ * 
+ * Webfont: Konnect-ExtraBold by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/extra-bold/
+ * 
+ * Webfont: Konnect-Black by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/black/
+ * 
+ * Webfont: Konnect-Thin by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/thin/
+ * 
+ * Webfont: Konnect-LightItalic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/light-italic/
+ * 
+ * Webfont: Konnect-BlackItalic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/black-italic/
+ * 
+ * Webfont: Konnect-ExtraBoldItalic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/extra-bold-italic/
+ * 
+ * Webfont: Konnect-SemiBold by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/semi-bold/
+ * 
+ * Webfont: Konnect-HairlineItalic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/hairline-italic/
+ * 
+ * Webfont: Konnect-Hairline by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/hairline/
+ * 
+ * Webfont: Konnect-Medium by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/medium/
+ * 
+ * Webfont: Konnect-SemiBoldItalic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/semi-bold-italic/
+ * 
+ * Webfont: Konnect-Light by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/light/
+ * 
+ * Webfont: Konnect-MediumItalic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/medium-italic/
+ * 
+ * Webfont: Konnect-Regular by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/regular/
+ * 
+ * Webfont: Konnect-ThinItalic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/thin-italic/
+ * 
+ * Webfont: Konnect-BoldItalic by Adam Ladd
+ * URL: https://www.myfonts.com/fonts/adam-ladd/konnect/bold-italic/
+ * 
+ * 
+ * Webfonts copyright: Copyright © 2019 by Adam Ladd. All rights reserved.
+ * 
+ * © 2022 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/431b0e");
+  
+@font-face {
+  font-family: "Konnect-Hairline";
+  src: url('webFonts/KonnectHairline/font.woff2') format('woff2'), url('webFonts/KonnectHairline/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-LightItalic";
+  src: url('webFonts/KonnectLightItalic/font.woff2') format('woff2'), url('webFonts/KonnectLightItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-Bold";
+  src: url('webFonts/KonnectBold/font.woff2') format('woff2'), url('webFonts/KonnectBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-ExtraBoldItalic";
+  src: url('webFonts/KonnectExtraBoldItalic/font.woff2') format('woff2'), url('webFonts/KonnectExtraBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-Regular";
+  src: url('webFonts/KonnectRegular/font.woff2') format('woff2'), url('webFonts/KonnectRegular/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-Thin";
+  src: url('webFonts/KonnectThin/font.woff2') format('woff2'), url('webFonts/KonnectThin/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-BoldItalic";
+  src: url('webFonts/KonnectBoldItalic/font.woff2') format('woff2'), url('webFonts/KonnectBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-HairlineItalic";
+  src: url('webFonts/KonnectHairlineItalic/font.woff2') format('woff2'), url('webFonts/KonnectHairlineItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-ExtraBold";
+  src: url('webFonts/KonnectExtraBold/font.woff2') format('woff2'), url('webFonts/KonnectExtraBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-Italic";
+  src: url('webFonts/KonnectItalic/font.woff2') format('woff2'), url('webFonts/KonnectItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-Black";
+  src: url('webFonts/KonnectBlack/font.woff2') format('woff2'), url('webFonts/KonnectBlack/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-SemiBoldItalic";
+  src: url('webFonts/KonnectSemiBoldItalic/font.woff2') format('woff2'), url('webFonts/KonnectSemiBoldItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-BlackItalic";
+  src: url('webFonts/KonnectBlackItalic/font.woff2') format('woff2'), url('webFonts/KonnectBlackItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-ThinItalic";
+  src: url('webFonts/KonnectThinItalic/font.woff2') format('woff2'), url('webFonts/KonnectThinItalic/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-Light";
+  src: url('webFonts/KonnectLight/font.woff2') format('woff2'), url('webFonts/KonnectLight/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-Medium";
+  src: url('webFonts/KonnectMedium/font.woff2') format('woff2'), url('webFonts/KonnectMedium/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-SemiBold";
+  src: url('webFonts/KonnectSemiBold/font.woff2') format('woff2'), url('webFonts/KonnectSemiBold/font.woff') format('woff');
+}
+@font-face {
+  font-family: "Konnect-MediumItalic";
+  src: url('webFonts/KonnectMediumItalic/font.woff2') format('woff2'), url('webFonts/KonnectMediumItalic/font.woff') format('woff');
+}
+

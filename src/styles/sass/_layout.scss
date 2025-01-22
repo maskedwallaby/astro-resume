@@ -1,0 +1,9 @@
+@mixin grid {
+	display: grid;
+	grid-gap: var(--unit);
+}
+
+.grid-2col {
+	@include grid;
+	grid-template-columns: 1fr 1fr;
+}

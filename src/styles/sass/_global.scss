@@ -1,64 +1,5 @@
 /* Global styles */
 
-@font-face {
-  font-family: "League Spartan Variable";
-  font-weight: 400 600;
-  src: url("../../typefaces/LeagueSpartan-VF.woff2") format("woff2-variations");
-}
-
-@font-face {
-  font-family: "fanwood";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../../typefaces/fanwood_text-webfont.woff") format("woff");
-}
-
-@font-face {
-  font-family: "fanwood";
-  font-weight: normal;
-  font-style: italic;
-  src: url("../../typefaces/fanwood_text_italic-webfont.woff") format("woff");
-}
-
-/* 
-@font-face {
-  font-family: Museo;
-  font-weight: normal;
-  src: url("../../museo500.woff2") format("woff2");
-}
-@font-face {
-  font-family: Museo;
-  font-weight: bold;
-  src: url("../../museo700.woff2") format("woff2");
-}
-@font-face {
-  font-family: MuseoSans;
-  font-weight: normal;
-  src: url("../../museosans-500.woff2") format("woff2");
-}
-@font-face {
-  font-family: MuseoSans;
-  font-weight: normal;
-  font-style: oblique;
-  src: url("../../museosansitalic-500.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: Konnect;
-  font-weight: normal;
-  src: url("../../konnect-regular.woff2") format("woff2");
-}
-@font-face {
-  font-family: Konnect;
-  font-weight: bold;
-  src: url("../../konnect-bold.woff2") format("woff2");
-}
-@font-face {
-  font-family: Konnect;
-  font-weight: normal;
-  font-style: oblique;
-  src: url("../../konnect-italic.woff2") format("woff2");
-} */
 
 :root {
   /* ------------- Colors ------------- */
@@ -72,6 +13,8 @@
   --color-brand-yellow-rgb: rgb(94.9% 87.06% 62.75%);
   --color-brand-navy-black: lch(20.363% 0 261.816deg);
   --color-brand-navy-black-rgb: rgb(23.57% 23.57% 23.57%);
+  
+  --unit: 1rem;
 
   /* ------------- Shadows ------------- */
   --shadow-color: 0deg 0% 54%;
