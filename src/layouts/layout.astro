@@ -1,43 +1,9 @@
 ---
 import "the-new-css-reset/css/reset.css"
-import "../styles/sass/_layout.scss";
-/* import "simpledotcss/simple.min.css" (too opinionated) */
 import '../styles/main.css';
 import { site_title } from '../config';
 import Waves from '../components/waves.astro';
 ---
-
-<style>
-  main {
-    margin: 1rem;
-    margin-top: 4rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-areas: "header header"
-                        "article aside"
-                        "footer footer";
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: auto 1fr;
-  }
-  header {
-    margin-bottom: 1rem;
-    grid-area: header;
-  }
-  aside {
-    grid-area: aside;
-    position: sticky;
-    bottom: 0;
-    /* right: 0; */
-    picture {
-      align-self: bottom;
-    }
-  }
-  section {
-    padding-top: 1rem;
-  }
-</style>
 
 <html lang="en">
   <head>
@@ -53,6 +19,7 @@ import Waves from '../components/waves.astro';
         <slot /><!-- Content slots in here here -->
       </article>
       <aside>
+        <a href="mailto:chrisweiser@pm.me" class="button">✉️&nbsp;&nbsp;Email me!</a>
         <picture width="300">
           <source 
             srcset="/images/chris-weiser-full-cutout-300.svg" 
