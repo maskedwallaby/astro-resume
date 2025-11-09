@@ -2,6 +2,9 @@
 // Mega
 ---
 <style>
+	.stark {
+		color: var(--color-brand-navy-lch);
+	}
 	.multicolored {
 		background: linear-gradient(
 			to right, 
@@ -27,12 +30,23 @@
 		line-height: 2.5rem;
 		letter-spacing: -3%;
 		text-indent: clamp(0.75rem, 1vw, 1rem);
-		font-variation-settings: "wght" 700;
+		font-variation-settings: "wght" 300;
+		color: var(--color-brand-raspberry-lch);
+		/* color: var(--color-brand-navy-dark); */
+	}
+	.yellow {
+		color: var(--color-brand-yellow-lch);
+	}
+	.red {
+		color: var(--color-brand-raspberry-lch);
+	}
+	.dark {
+		color: var(--color-brand-navy-lch);
 	}
 </style>
 
-<h1 class="multicolored">
+<h1 class="stark">
 	<div class="mega">Chris</div>
 	<div class="mega">Weiser</div>
-	<div class="champion">Dot Com</div>
+	<div class="champion">Designer <span class="dark">+</span> Developer</div>
 </h1>
