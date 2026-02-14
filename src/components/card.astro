@@ -17,6 +17,11 @@ const { class: card } = Astro.props;
 	  transition-property: transform, box-shadow;
 	  transition-timing-function: ease;
 	  transition-duration: 0.25s;
+		
+		a {
+			text-decoration: underline;
+			color: var(--color-brand-raspberry-lch);
+		}
 	}
 	.card:hover {
 	  transform: scale(1.025);
